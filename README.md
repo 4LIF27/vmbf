@@ -9,10 +9,12 @@ $ pkg install git
 $ pip insttall requests bs4
 $ git clone https://github.com/Zhukov-Z/vmbf
 $ cd vmbf
+$ chmod 777 vmbf
 ```
 ### Run
 ```
-$ ./vmbf
+$ ./vmbf for 32 bit
+$ ./vmbf64 for 64 bit
 ```
 ## MY SOCIAL MEDIA
 [![Github](https://img.shields.io/badge/Github-Ikuti-green?style=for-the-badge&logo=github)](https://github.com/zhukov-z)
