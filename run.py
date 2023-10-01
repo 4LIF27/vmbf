@@ -12,19 +12,18 @@ except:
     pass
 	
 bit = platform.architecture()[0]
-if bit == '64bit':
-	exit(" maaf untuk sc ini belum support 64 bit ")
-    if not os.path.isfile('v64'):
-        os.system('pip install -r requirements.txt') 
-        os.system("chmod +x v64")
-        os.system("./run")
-    else:
-        os.system("./run")
 
-elif bit == '32bit':
-    if not os.path.isfile('v32'):
+
+if bit == '32bit':
+    if os.path.exists("requirements.txt"):
+    	
         os.system('pip install -r requirements.txt') 
         os.system("chmod +x v32")
-        os.system("./run")
-    else:
+        os.remove("requirements.txt")
         os.system("./v32")
+    else:
+        
+        os.system("./v32")
+else:
+	exit(" maaf device anada belum support")
+        
